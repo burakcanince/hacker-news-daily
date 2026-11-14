@@ -1,0 +1,40 @@
+{
+  "name": "hacker-news-daily",
+  "version": "1.0.1",
+  "description": "Read Hacker News in your terminal. Top stories, comment trees, keyword filters and JSON or Markdown output.",
+  "type": "module",
+  "bin": {
+    "hn-daily": "dist/cli.js",
+    "hnd": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "hacker-news",
+    "hackernews",
+    "hacker-news-cli",
+    "hn",
+    "ycombinator",
+    "news",
+    "news-reader",
+    "tech-news",
+    "cli",
+    "terminal"
+  ],
+  "author": "silentcoding",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
+}
